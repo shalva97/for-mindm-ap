@@ -21,6 +21,6 @@ fun main() {
         .also { printAsHex(it) }
 }
 
-fun printAsHex(bytes: ByteArray) {
+private fun printAsHex(bytes: ByteArray) {
     println(bytes.joinToString("") { "%02x".format(it) })
 }
