@@ -9,7 +9,7 @@ fun main() {
     ("222".toBigDecimal() == 222.toBigDecimal())
         .run(::println)
 
-    ("222.3".toBigDecimal() > 222.toBigDecimal())
+    (222.2.toBigDecimal() > 222.toBigDecimal())
         .run(::println)
 
     ("222".toBigDecimal() == 222.5.toBigDecimal())
@@ -18,5 +18,8 @@ fun main() {
     BigDecimal.ONE
     BigDecimal.TEN
     BigDecimal.ZERO
+
+    BigDecimal.ONE.max(BigDecimal.TEN)
+        .run(::println)
 }
 
